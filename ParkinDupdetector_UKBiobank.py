@@ -19,10 +19,10 @@ cnv = 0
 insert = 0
 files = 0
 while files <= 1:
-    folderpath = "/data/LNG/CORNELIS_TEMP/WILL_PRKN/output/" + str(files)
+    folderpath = "path/to/PRKN/output/" + str(files)
     caselist = os.listdir(folderpath)
     for item in caselist:
-        patientpath =  ("/data/LNG/CORNELIS_TEMP/WILL_PRKN/output/" + str(files) +"/"+item)
+        patientpath =  ("/path/to/PRKN/" + str(files) +"/"+item)
         try: #Reads one microarray data file. This will be changed into a loop to do this iteratively
             print("Reading data for " + item)
             park2 = pd.read_csv(patientpath, sep='\t', names = ['Chr', 'RsID', 'Family',"Position","Ref","Alt","Log_R_Ratio","B_Allele_Freq"])  
@@ -79,4 +79,4 @@ while files <= 1:
     files+=1
     print(files)
 
-results.to_csv('/data/LNG/CORNELIS_TEMP/WILL_PRKN/ParkinDup_ukboutput_0_1.csv')
+results.to_csv('/path/to/PRKN/ParkinDup_ukboutput_0_1.csv')

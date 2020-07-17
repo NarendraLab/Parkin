@@ -1,9 +1,9 @@
 #!/usr/local/bin/perl
 
 # These files are read just once, so they do not need to be copied to local disk
-$file1 = "/data/LNG/CORNELIS_TEMP/WILL_PRKN/parsed/prknbaf.txt";
-$file2 = "/data/LNG/CORNELIS_TEMP/WILL_PRKN/parsed/prknl2ratio.txt";
-$variants = "/data/LNG/CORNELIS_TEMP/WILL_PRKN/parsed/variantsbp.bim";
+$file1 = "/path/to/PRKN/parsed/prknbaf.txt";
+$file2 = "/path/to/PRKN/parsed/prknl2ratio.txt";
+$variants = "/path/to/PRKN/parsed/variantsbp.bim";
 
 $linenum=0;
 # read the prknbaf file into an array
